@@ -1,0 +1,12 @@
+html, body {
+  height: 100%;
+}
+.background {
+  background-color: #F7F9C4;
+  min-height: 100%;
+  width: 100%;
+}
+.damage {
+  align-content: center;
+  justify-content: center;
+}
