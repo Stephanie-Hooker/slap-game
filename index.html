@@ -14,9 +14,9 @@
 
 <body>
   <div class="container-fluid background">
-    <div class="row justify-content-center align-items-center">
-      <div class="col">
-        <span>name:<span id="name">Smiling emjoi</span></span>
+    <div class="row title text-center justify-content-center align-items-center mb-4">
+      <div class="col-6">
+        <span>name:<span id="name"> slap smiling emoji</span></span>
         <div>
           <span>Health:<span id="health">health</span></span>
         </div>
@@ -24,34 +24,55 @@
           <span>hits:<span id="hits">hits</span></span>
         </div>
       </div>
+      <div class="col-1">
+        <button class="btn" onclick="reset()">reset</button>
+      </div>
     </div>
-    <div class="row mt-4">
 
+    <div class="row action justify-content-center align-items-center">
+      <div class="col slap">
+        <h2>Action buttons</h2>
+        <img src="http://static.skaip.org/img/emoticons/180x180/f6fcff/slap.gif" alt="slap image"
+          style="height: 125px;">
+        <button class="btn" onclick="slap()">slap</button>
+      </div>
+      <div class="col punch">
+        <img src="https://media1.tenor.com/images/e411ea9545b23cab5a1ca50bd8c4953a/tenor.gif?itemid=10123174"
+          alt="punch image" style="height: 125px;">
+        <button class="btn" onclick="punch()">punch</button>
+      </div>
+      <div class="col kick">
+        <img src="https://thumbs.gfycat.com/AdvancedSmartKid-max-1mb.gif" alt="kick image" style="height: 120px;">
+        <button class="btn" onclick="kick()">kick</button>
+      </div>
+    </div>
+
+    <div class="row modifiers justify-content-center align-items-center">
+      <div id="items" class="col shield">
+        <h2>modifier buttons</h2>
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/7578c417564525.562bbaeb6a35e.gif"
+          alt="shield image" style="height: 125px;">
+        <button class="btn" onclick="giveShield()">shield</button>
+      </div>
+      <div id="items" class="col sword">
+        <img src="https://www.forumforyou.it/faccine/smile2/1f.gif" alt="sword image" style="height: 125px;">
+        <button class="btn" onclick="giveSword()">sword</button>
+      </div>
+      <div id="items" class="col giveKarate">
+        <img src="https://i.gifer.com/embedded/download/I0Pa.gif" alt="karate image" style="height: 125px;">
+        <button class="btn" onclick="karate()">karate</button>
+      </div>
+    </div>
+
+    <div class="row target justify-content-center align-items-center mt-2">
       <div class="col">
-        <button onclick="slap()">slap</button>
-        <button onclick="punch()">punch</button>
-        <button onclick="kick()">kick</button>
+        <img id="target-image" class="rounded mx-auto d-block"
+          src="https://cdn.shopify.com/s/files/1/1061/1924/products/Emoji_Icon_-_Happy_large.png?v=1542436006"
+          alt="smiling emoji" style="height: 300px;">
       </div>
     </div>
-    <div class="row">
-
-      <div id="items" class="col damage">
-        <button onclick="giveShield()">shield</button>
-        <button onclick="giveSword()">sword</button>
-        <button onclick="giveKungFu()">kung fu</button>
-      </div>
-    </div>
-    <div class="row">
-
-
-      <div class="col">
-        <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Emoji_Icon_-_Happy_large.png?v=1542436006"
-          width="200px" alt="emoji">
-      </div>
-    </div>
-
   </div>
-  </div>
+
 
 
 
