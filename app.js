@@ -80,7 +80,7 @@ function slap() {
 }
 
 //action btn that reduces health by 5
-//increase hits by 5
+//increase hits by 1
 function punch() {
   target.health -= 5 + addMods();
   target.hits++;
@@ -88,7 +88,7 @@ function punch() {
 }
 
 //action btn that reduces health by 10
-//increase hits by 10
+//increase hits by 1
 function kick() {
   target.health -= 10 + addMods();
   target.hits++;
@@ -105,6 +105,7 @@ function update() {
   let imageElement = document.querySelector("#target-image");
   let moodIndex = checkMood();
   let moodObj = target.moods[moodIndex];
+  // @ts-ignore
   imageElement.src = moodObj.img;
   checkMood();
 }
